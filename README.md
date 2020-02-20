@@ -1,6 +1,10 @@
 # MCU20 pablinza@me.com
 Programacion de Microcontroladores PIC16F
 
+<p align="center">
+  <img src="pic1.png"></img>
+</p>
+
 Carpeta con los ejercicios practicos de Laboratorio. Archivos generados en MPLABX utilizando el compilador XC8 y los siguientes modelos:
 - PIC16F887 carpeta mcu20/p887micro
 - PIC16F687 carpeta mcu20/p687micro
