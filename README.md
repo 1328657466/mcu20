@@ -27,10 +27,10 @@ Practicas de Programacion para Microcontroladores PIC16F.
 - P08 - Contador de Pulsos con Interrupcion [circuito 03]
 - P09 - Lectura de un canal ADC [circuito 04]
 - P10 - Lectura de dos canales ADC [circuito 04]
-- A11 - Contador de 4 digitos en 7 Segmentos [circuito 05]
-- A12 - Indicador de distancia con LCD [circuito 06]
-- A13 - Menu LCD con econder Rotativo [circuito 07]
-- A14 - Control de servos para dos canales [circuito 08]
-- A15 - Comunicacion AT para mensaje SMS [circuito 09]
+- A01 - Contador de 4 digitos en 7 Segmentos [circuito 05]
+- A02 - Indicador de distancia con LCD [circuito 06]
+- A03 - Menu LCD con econder Rotativo [circuito 07]
+- A04 - Control de servos para dos canales [circuito 08]
+- A05 - Comunicacion AT para mensaje SMS [circuito 09]
 
 Autor: Pablo Zarate Arancibia Ingeniero Electronico pablinzte@gmail.com
