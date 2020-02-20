@@ -1,7 +1,8 @@
 /****************************************************
- *	APLICACION #3	:	Menu y LCD Encoder			*
+ *	APLICACION #13	:	Menu y LCD Encoder			*
  *	Paso1:	Crear Menu LCD de 1 Nivel				*
- *	Paso2:	Agregar control Encode a Menu			*
+ *	Paso2:	Agregar control Encoder a Menu			*
+ * Autor: Pablo Zarate Arancibia pablinza@me.com	*
  ****************************************************/
 
 #pragma config FOSC = INTRC_NOCLKOUT// Oscillator Selection bits (INTOSCIO oscillator: I/O function on RA6/OSC2/CLKOUT pin, I/O function on RA7/OSC1/CLKIN)
@@ -126,7 +127,7 @@ void main()
 	INTCONbits.GIE = 1; //Habilita la interrupcion global
 	while(true)
 	{
-		TaskLED1(); //Destello LED
+		TaskLED1(); 
 		TaskBUT1();
 		TaskMENU1();
 		if(seccnt++ > 990)
@@ -282,39 +283,39 @@ void ShowMenu()
 {
     char lcnt = 0, from = 0, till = 0, temp = 0;
     while(till <= menusel)
-        till += menu[till].mpoints; //Max position for present option
-    from = till - menu[menusel].mpoints; //Min for actual pos
-    till --; //Till is value - 1
+        till += menu[till].mpoints; //Asigna el indice final del menu
+    from = till - menu[menusel].mpoints; //Asigna el indice inicial del menu
+    till --; //Ajusta el indice final
     temp = from;
     //Verifica si la seleccion esta mas alla de la segunda linea para desplazar el lcd
-    if(menusel >= (from + 1) && (menusel <= (till-1))) //for lcd is 2 lines only
+    if(menusel >= (from + 1) && (menusel <= (till-1)))
     {
-        from = menusel - 1; //2lines = 1, 4lines = 2
-        till = from + 1; //only two lines show last line
+        from = menusel - 1; //Ajuste inicial para 2 lineas -1, para 4 lineas -2 
+        till = from + 1; //Ajusta final para 2 lineas +1
         for(from; from <= till; from ++)
         {
-            LCDGotoln(lcnt);
-            LCDPuts(menu[from].text);
-            lcnt++;
+            LCDGotoln(lcnt); //Mueve el cursor a la posicion inicial de la linea
+            LCDPuts(menu[from].text); //Desplega el texto en pantalla
+            lcnt++; //Incrementa el contador de linea.
         }
-        LCDGotoln(1); //Second line
-        LCDPutc(0x7E);
+        LCDGotoln(1); //Mueve el cursor a la posicion inical de la primera linea
+        LCDPutc(0x7E); //Escribe en pantalla el caracter ascii 0x7e
     }
-    else
+    else //En caso de que la seleccion sea menor igual a la segunda linea
     {
         if(menusel < (from + 1))
         {
-            till = from  + 1; //for 2Lines=1 4Lines=3
+            till = from  + 1; //Ajusta final para 2 lineas +1 o 4 lineas +3
             for (from; from <= till; from ++)
             {
-                LCDGotoln(lcnt);
-                LCDPuts(menu[from].text);
-                lcnt ++;
+                LCDGotoln(lcnt); //Mueve el cursor a la posicion inicial de la linea
+				LCDPuts(menu[from].text); //Desplega el texto en pantalla
+				lcnt++; //Incrementa el contador de linea.
             }
             LCDGotoln(menusel - temp);
             LCDPutc(0x7E);
         }
-        if(menusel == till)
+        if(menusel == till) //Si el indice actual es igual al indice final
         {
             from = till - 1; //for 2Lines=1 4Lines=3
             for (from; from <= till; from ++)

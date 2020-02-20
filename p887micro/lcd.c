@@ -1,7 +1,7 @@
 /*********************************************************
  *  Libreria Basica para control de modulo LCD
- *  Autor: Pablo Zarate email:pablo@digital-bo.com
- *  Material de uso para aprendizaje en ELT436 U.E.B.
+ *  Autor: Pablo Zarate email:pablinza@me.com
+ *  Material de uso para programacion de Microcontroladores
  *  (nota) El pin RW del LCD debe ser 0 logico
  *  Se debe definir los siguientes literales
  *  #define LCD_RS Pin de salida
@@ -17,7 +17,7 @@ Se autoriza el uso, copia y distribucion de este software con fines educativos
 Favor tomar en cuenta lo siguiente:
 El software y documentacion provisto no implica garantia alguna en cuanto al uso 
 y sus posibles resultados directos o indirectos, incluyendo posibles incidentes, 
-daños personales, daños materiales, perdida de informacion, etc.
+danos personales, danos materiales, perdida de informacion, etc.
 *******************************************************************************/
 void LCDWritechar(char data)
 {
