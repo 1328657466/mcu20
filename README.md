@@ -38,3 +38,4 @@ Practicas de Programacion para Microcontroladores PIC16F.
 - A05 - Comunicacion AT para mensaje SMS [circuito 09]
 
 Autor: Pablo Zarate Arancibia Ingeniero Electronico pablinzte@gmail.com
+Blog de contenido https://pablinza.blogspot.com/
