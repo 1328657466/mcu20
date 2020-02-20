@@ -1,9 +1,9 @@
-# mcu20
+# MCU20 pablinza@me.com
 Programacion de Microcontroladores PIC16F
 
 Carpeta con los ejercicios practicos de Laboratorio. Archivos generados en MPLABX utilizando el compilador XC8 y los siguientes modelos:
-### PIC16F887 carpeta p887micro
-### PIC16F687 carpeta p687micro
+- PIC16F887 carpeta mcu20/p887micro
+- PIC16F687 carpeta mcu20/p687micro
   
 Los archivos con extension .c corresponden al codigo fuente de un programa o practica
 Los archivos con extension .h y .c con mismo nombre, son el conjunto de procedimiento y funciones basicas
