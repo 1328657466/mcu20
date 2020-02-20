@@ -6,7 +6,7 @@ Carpeta con los ejercicios practicos de Laboratorio. Archivos generados en MPLAB
 - PIC16F687 carpeta mcu20/p687micro
   
 Los archivos con extension .c corresponden al codigo fuente de un programa o practica
-Los archivos con extension .h y .c con mismo nombre, son el conjunto de procedimiento y funciones basicas
+Los archivos con extension .h y .c con mismo nombre, son procedimientos y funciones basicas
 Los archivos con extension .hex representan el codigo de maquina generado para el PIC
 Los archivos con extension .png corresponden a una imagen de esquema de circuito
 
