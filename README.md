@@ -16,12 +16,21 @@ Deben contar con el IDE MPLABX y su compilador XC8 instalados en el ordenador.
 Practicas de Programacion para Microcontroladores PIC16F.
 
 ## Lista de practicas desarrolladas en la Materia
-- P00 - Destello LED(Prueba fusibles y oscilador)
-- P01 - Dezplazamiento LED con pulsador(Prueba de los Puertos E/S)
-- P02 - Reloj con pantalla LCD (Uso de los puertos E/S)
-- P03 - Semaforo Digital (Manejo de la interrupcion INTF)
-- P04 - Byte Transfer con Pulsador y LED(USART y Bluetooth HC-05)
-- P05 - String Transfer control Servo(USART + TMR1)
-- P06 - Lectura Analogica y Control Servo(Conversion ADC + TMR1 + USART)
+- P00 - Destello LED1 secuencial [circuito 01]
+- P01 - Destello LED1 por Estados [circuito 01]
+- P02 - Destello LED1 + Control LED2 [circuito 01]
+- P03 - Transmision Serie de estado BUT1 [circuito 01+]
+- P04 - Recepcion Serie y control LED2 [circuito 01+]
+- P05 - Control LED2 por Interrupcion [circuito 02]
+- P06 - Recepcion Cadena por Interrupcion [circuito 02]
+- P07 - Temporizador LED3 con Interrupcioin [circuito 03]
+- P08 - Contador de Pulsos con Interrupcion [circuito 03]
+- P09 - Lectura de un canal ADC [circuito 04]
+- P10 - Lectura de dos canales ADC [circuito 04]
+- A11 - Contador de 4 digitos en 7 Segmentos [circuito 05]
+- A12 - Indicador de distancia con LCD [circuito 06]
+- A13 - Menu LCD con econder Rotativo [circuito 07]
+- A14 - Control de servos para dos canales [circuito 08]
+- A15 - Comunicacion AT para mensaje SMS [circuito 09]
 
 Autor: Pablo Zarate Arancibia Ingeniero Electronico pablinzte@gmail.com
