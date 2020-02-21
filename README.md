@@ -37,5 +37,8 @@ Practicas de Programacion para Microcontroladores PIC16F.
 - A04 - Control de servos para dos canales [circuito 08]
 - A05 - Comunicacion AT para mensaje SMS [circuito 09]
 
+Adjunto el siguiente link que muestra como compilar estos ejemplos en MPLABX
+[![](http://img.youtube.com/vi/MlWDKmyY088/0.jpg)](http://www.youtube.com/watch?v=MlWDKmyY088 "Ejemplo MPLABX")
+
 Autor: Pablo Zarate Arancibia Ingeniero Electronico pablinzte@gmail.com
 Blog de contenido https://pablinza.blogspot.com/
