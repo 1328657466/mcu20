@@ -1,13 +1,13 @@
-/************************************************************************
- * Libreria de rutinas basicas para los Recursos/Perifericos de los MCU	*
- * 				PIC16F882/F883/F884/F886/F887							* 
- *    Company: Universidad Evangelica Boliviana 						*
- *    Author: Pablo Zarate A. pablinza@me.com							*
- *    Version: Jan 2020 V20.01											*
- *    Summary: Es una libreria de funciones y procedimientos para hacer	*
- *               uso del sensor DS18B mediante protocolo 1-wire			*
- *             Requiere definir DS18pin y DS18Tris con pullup 4.7k		*
- ************************************************************************/
+/****************************************************************
+ *	Libreria de rutinas basicas para los Recursos/Perifericos	*
+ * 	Lista de MCU: PIC16F882/F883/F884/F886/F887					*
+ *	Company: Universidad Evangelica Boliviana 					*
+ *	Author: Pablo Zarate A. pablinza@me.com						*
+ *	Version: Jan 2020 V20.01									*
+ *	Summary: Es una libreria de funciones y procedimientos para	*
+ *	hacer uso del sensor DS18B mediante protocolo 1-wire		*
+ *	Requiere definir DS18pin y DS18Tris con pullup 4.7k			*
+ ****************************************************************/
 #ifndef _DS18B20_LIB
 #define _DS18B20_LIB
 #define wait240US __delay_us(240)
