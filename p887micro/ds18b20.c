@@ -14,7 +14,7 @@
 #include "ds18b20.h"
 uint8_t DS18Reset()
 {
-   uint8_t res;
+	uint8_t res;
 	DS18pin = 0;	//Set pin in low level
 	DS18tris = 0;	//Master Put bus in low level (output)
 	wait240US;
@@ -32,24 +32,24 @@ void DS18Write(uint8_t data)
 	uint8_t cnt = 8;
 	DS18tris = 1; //Master release bus (input tri-state)
 	while(cnt --)
-   {
-      if(data & 0x01) 
+	{
+		if(data & 0x01) 
 		{  // write 1 on bus
-         DS18pin = 0;	//Set pin in low level
-         DS18tris = 0;	//Master Put bus in low level (output)
-         wait5US;	//wait time max 15us
-         DS18tris = 1;	//Master release bus (input tri-state)
-         wait60US;//1-wire require time delay
-      } 
-      else 
+			DS18pin = 0;	//Set pin in low level
+			DS18tris = 0;	//Master Put bus in low level (output)
+			wait5US;	//wait time max 15us
+			DS18tris = 1;	//Master release bus (input tri-state)
+			wait60US;//1-wire require time delay
+		} 
+		else 
 		{  //write 0 on bus
-         DS18pin = 0;	//Set pin in low level
-         DS18tris = 0;	//Master Put bus in low level (output)
-         wait60US;//1-wire require time delay
-         DS18tris = 1;	//Master release bus (input tri-state)
-         wait5US;
+			DS18pin = 0;	//Set pin in low level
+			DS18tris = 0;	//Master Put bus in low level (output)
+			wait60US;//1-wire require time delay
+			DS18tris = 1;	//Master release bus (input tri-state)
+			wait5US;
 		}
-      data = data >> 1;
+		data = data >> 1;
 	}
 }
 
@@ -58,17 +58,17 @@ uint8_t DS18Read()
 	uint8_t cnt = 8, data = 0;
 	DS18tris = 1; //Master release bus (input tri-state)
 	while(cnt --)
-   {
+	{
 		DS18pin = 0;	//Set pin in low level
-      DS18tris = 0;	//Master Put bus in low level (output)
-      wait5US; //wait between 5-15uS
+		DS18tris = 0;	//Master Put bus in low level (output)
+		wait5US; //wait between 5-15uS
 		DS18tris = 1;	//Master release bus (input tri-state)
-      wait5US; //wait time before sample level
-      wait5US;
+		wait5US; //wait time before sample level
+		wait5US;
 		if(DS18pin)		//sample level
-         data |= 0x80; //if level is high(1)
+			data |= 0x80; //if level is high(1)
 		if(cnt) data >>= 1;
-      wait60US; // wait for recovery time
+		wait60US; // wait for recovery time
 	}
 	return data;
 }
