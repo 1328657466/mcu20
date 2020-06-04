@@ -1,12 +1,12 @@
-/************************************************************************
-* Libreria de rutinas basicas para los Recursos/Perifericos de los MCU	*
-* 				PIC16F882/F883/F884/F886/F887 			   				* 
-*    Company: Universidad Evangelica Boliviana 							*
-*     Author: Pablo Zarate A. pablinza@me.com							*
-*    Version: Dec 2018 V18.12  										*
-*    Summary: Es una libreria de funciones y procedimientos de uso base *
-*			  para los PIC serie 16F88x empleados en la materia ELT-436.*
-************************************************************************/
+/*******************************************************************
+	Libreria de rutinas basicas para los Recursos/Perifericos
+	MCU:PIC16F882/F883/F884/F886/F887
+	Company: Universidad Evangelica Boliviana
+	Author: Pablo Zarate A. pablinza@me.com
+	Version: Jan 2020 V20.01
+	Summary: Libreria de funciones y procedimientos de uso base
+	para los PIC serie 16F88x empleados en la materia ELT-436
+*******************************************************************/
 #ifndef  _PERIPHERAL_LIB
 #define  _PERIPHERAL_LIB
 
